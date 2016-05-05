@@ -5,7 +5,7 @@
 下载hadoop 2.7.2
 
 将包解压至其他目录/opt/ (同下面环境变量一致)
-```
+```sh
 $ tar zxf hadoop-2.7.2.tar.gz
 ```
 配置环境变量
@@ -13,7 +13,7 @@ $ tar zxf hadoop-2.7.2.tar.gz
 将以下变量添加至 /etc/profile 或者 ~/.bashrc 中
 
 （安装目录为/opt/hadoop-2.7.2)
-```
+```sh
 export HADOOP_INSTALL=/opt/hadoop-2.7.2
 export HADOOP_MAPRED_HOME=$HADOOP_INSTALL
 export HADOOP_COMMON_HOME=$HADOOP_INSTALL
@@ -29,7 +29,7 @@ export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:$CLASSPATH
 export PATH=${PATH}:${JAVA_HOVE}/bin:$JRE_HOME/bin:$MAVEN_HOME:$HADOOP_INSTALL/bin
 ```
 保存后使之生效
-```
+```sh
 $ source filname
 ```
 
@@ -49,7 +49,7 @@ $ cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys
 
 配置后尝试登陆
 
-```
+```sh
 $ ssh localhost
 ```
 
